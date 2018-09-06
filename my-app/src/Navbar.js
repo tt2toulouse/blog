@@ -4,28 +4,24 @@ import { withStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
+// import Button from '@material-ui/core/Button'
+// import IconButton from '@material-ui/core/IconButton'
+// import MenuIcon from '@material-ui/icons/Menu'
 
 const styles = {
   root: {
     flexGrow: 1,
   },
   flex: {
-    flexGrow: 1,
-    color: '#111111'
+    flexGrow: 1
   },
-  button: {
-    color: '#111111'
+  logo: {
+    color: '#111111',
+    textDecoration: 'none'
   },
   navbar : {
     backgroundColor: '#FFFFFF',
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
-    color: '#111111'
+    boxShadow: 'none'
   }
 }
 
@@ -35,13 +31,11 @@ function Navbar(props) {
     <div className={classes.root}>
       <AppBar className={classes.navbar} position='static'>
         <Toolbar>
-          <IconButton className={classes.menuButton} color='inherit' aria-label='Menu'>
-            <MenuIcon />
-          </IconButton>
-          <Typography variant='title' className={classes.flex}>
-            "BLOG"
+          <Typography variant='display1' className={classes.flex}>
+            <a className={classes.logo} href='/' target='blank'>
+              "BLOG"
+            </a>
           </Typography>
-          <Button className={classes.button}>Login</Button>
         </Toolbar>
       </AppBar>
     </div>
