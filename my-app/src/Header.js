@@ -25,7 +25,7 @@ const styles = theme => ({
   card: {
     width: '100%',
     boxShadow: 'none',
-    textAlign: 'right'
+    textAlign: 'center'
   },
   title :{
     backgroundColor: '#F5F5F5'
@@ -49,7 +49,7 @@ function Header(props) {
             </Grid>
             <Grid item xs={6} sm={6} md={6} className={classes.field}>
               <Card className={classes.card}>
-                <CardActionArea>
+                <CardActionArea href='/food' target='blank'>
                   <CardMedia
                     component='img'
                     className={classes.media}
@@ -58,7 +58,7 @@ function Header(props) {
                     title='Food'
                   />
                   <CardContent className={classes.title}>
-                    <Typography gutterBottom variant='headline' component='h2'>
+                    <Typography gutterBottom variant='title' component='h2'>
                       Food   <FastfoodOutlined />
                     </Typography>
                   </CardContent>
@@ -68,7 +68,7 @@ function Header(props) {
 
             <Grid item xs={6} sm={6} md={6} className={classes.field}>
               <Card className={classes.card}>
-                <CardActionArea>
+                <CardActionArea href='/mode' target='blank'>
                   <CardMedia
                     component='img'
                     className={classes.media}
@@ -77,7 +77,7 @@ function Header(props) {
                     title='Mode'
                   />
                   <CardContent className={classes.title}>
-                    <Typography gutterBottom variant='headline' component='h2'>
+                    <Typography gutterBottom variant='title' component='h2'>
                       Mode   <ShoppingBasketOutlined />
                     </Typography>
                   </CardContent>
@@ -86,7 +86,7 @@ function Header(props) {
             </Grid>
             <Grid item xs={6} sm={6} md={6} className={classes.field}>
               <Card className={classes.card}>
-                <CardActionArea>
+                <CardActionArea href='/travels' target='blank'>
                   <CardMedia
                     component='img'
                     className={classes.media}
@@ -95,7 +95,7 @@ function Header(props) {
                     title='Travels'
                   />
                   <CardContent className={classes.title}>
-                    <Typography gutterBottom variant='headline' component='h2'>
+                    <Typography gutterBottom variant='title' component='h2'>
                       Travels   <LandscapeOutlined />
                     </Typography>
                   </CardContent>
@@ -105,7 +105,7 @@ function Header(props) {
 
             <Grid item xs={6} sm={6} md={6} className={classes.field}>
               <Card className={classes.card}>
-                <CardActionArea>
+                <CardActionArea href='/culture' target='blank'>
                   <CardMedia
                     component='img'
                     className={classes.media}
@@ -114,7 +114,7 @@ function Header(props) {
                     title='Culture'
                   />
                   <CardContent className={classes.title}>
-                    <Typography gutterBottom variant='headline' component='h2'>
+                    <Typography gutterBottom variant='title' component='h2'>
                       Culture   <AccountBalanceOutlined />
                     </Typography>
                   </CardContent>
